@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Numbers>
+  <Number input="100" expected="сто"/>
+  <Number input="105" expected="сто пять"/>
+  <Number input="150" expected="сто пятьдесят"/>
+  <Number input="153" expected="сто пятьдесят три"/>
+  <Number input="237" expected="двести тридцать семь"/>
+  <Number input="300" expected="триста"/>
+  <Number input="406" expected="четыреста шесть"/>
+  <Number input="560" expected="пятьсот шестьдесят"/>
+  <Number input="999" expected="девятьсот девяносто девять"/>
+  <Number input="10" expected="десять"/>
+  <Number input="30" expected="тридцать"/>
+</Numbers>

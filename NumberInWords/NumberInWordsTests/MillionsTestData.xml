@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<Numbers>
+  <Number input="100230550" expected="сто миллионов двести тридцать тысяч пятьсот пятьдесят"/>
+  <Number input="305000000" expected="триста пять миллионов"/>
+  <Number input="451600000" expected="четыреста пятьдесят один миллион шестьсот тысяч"/>
+  <Number input="511000000" expected="пятьсот одиннадцать миллионов"/>
+  <Number input="217000000" expected="двести семнадцать миллионов"/>
+  <Number input="704000000" expected="семьсот четыре миллиона"/>
+</Numbers>
