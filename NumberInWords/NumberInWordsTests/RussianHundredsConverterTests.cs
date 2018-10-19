@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NumberInWords.NumberInWordsModel;
 
-namespace NumberInWordsTests
+/*namespace NumberInWordsTests
 {
     [TestClass]
     public class RussianHundredsConverterTests
@@ -41,7 +41,7 @@ namespace NumberInWordsTests
         {
             int input = Convert.ToInt32(TestContext.DataRow["input"]);
             string expected = Convert.ToString(TestContext.DataRow["expected"]);
-            RussianHundredsConverter convertNumber = new RussianHundredsConverter();
+            NumberToStringHundredsConverter convertNumber = new NumberToStringHundredsConverter();
             string output = convertNumber.ConvertNumber(input);
             Assert.AreEqual(expected, output);
         }
@@ -52,7 +52,7 @@ namespace NumberInWordsTests
             //arrange
             int input = 0;
             string expected = "ноль";
-            RussianHundredsConverter convertNumber = new RussianHundredsConverter();
+            NumberToStringHundredsConverter convertNumber = new NumberToStringHundredsConverter();
 
             //act
             string output = convertNumber.ConvertNumber(input);
@@ -69,10 +69,10 @@ namespace NumberInWordsTests
         public void RussianHundredsConverter_ConvertNumberTest_ArgumentException(int input)
         {
             //Arrange
-            RussianHundredsConverter convertNumber = new RussianHundredsConverter();
+            NumberToStringHundredsConverter convertNumber = new NumberToStringHundredsConverter();
 
             //Act
             string output = convertNumber.ConvertNumber(input);
         }
     }
-}
+}*/

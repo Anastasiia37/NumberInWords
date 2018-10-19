@@ -16,6 +16,16 @@ namespace NumberInWordsTests
             set;
         }
 
+       /* [TestMethod]
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML",
+            "ThousandsTestData.xml",
+            "Number",
+            DataAccessMethod.Sequential)]
+        public void RussianThousandsConverter_ThousandsTest_ThousandsTestData()
+        {
+            this.TestDifferentData();
+        }*/
+
         [TestMethod]
         [DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML",
             "ThousandsTestData.xml",
@@ -25,8 +35,15 @@ namespace NumberInWordsTests
         {
             this.TestDifferentData();
         }
-
-        [TestMethod]
+        public void TestDifferentData()
+        {
+            int input = Convert.ToInt32(TestContext.DataRow["input"]);
+            string expected = Convert.ToString(TestContext.DataRow["expected"]);
+            RussianThousandsConverter thousandsConverter = new RussianThousandsConverter();
+            string output = thousandsConverter.ConvertNumber(input);
+            Assert.AreEqual(expected, output);
+        }
+        /*[TestMethod]
         [DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML",
             "HundredsTestData.xml",
             "Number",
@@ -50,7 +67,7 @@ namespace NumberInWordsTests
         {
             int input = Convert.ToInt32(TestContext.DataRow["input"]);
             string expected = Convert.ToString(TestContext.DataRow["expected"]);
-            RussianThousandsConverter hundredsConverter = new RussianThousandsConverter();
+            NumberToStringThousandsConverter hundredsConverter = new NumberToStringThousandsConverter();
             string output = hundredsConverter.ConvertNumber(input);
             Assert.AreEqual(expected, output);
         }
@@ -63,10 +80,10 @@ namespace NumberInWordsTests
         public void RussianThousandsConverter_ConvertNumberTest_ArgumentException(int input)
         {
             //Arrange
-            RussianThousandsConverter convertNumber = new RussianThousandsConverter();
+            NumberToStringThousandsConverter convertNumber = new NumberToStringThousandsConverter();
 
             //Act
             string output = convertNumber.ConvertNumber(input);
-        }
+        }*/
     }
 }

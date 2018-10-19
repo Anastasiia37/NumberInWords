@@ -44,11 +44,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="NumberInWordsModel\INumberToStringConverter.cs" />
-    <Compile Include="NumberInWordsModel\RussianConverter.cs" />
-    <Compile Include="NumberInWordsModel\RussianHundredsConverter.cs" />
+    <Compile Include="NumberInWordsModel\NumberToStringHundredsConverter.cs" />
     <Compile Include="NumberInWordsModel\RussianMillionsConverter.cs" />
-    <Compile Include="NumberInWordsModel\RussianThousandsConverter.cs" />
+    <Compile Include="NumberInWordsModel\NumberToStringThousandsConverter.cs" />
     <Compile Include="NumberInWordsModel\NumberToStringConverter.cs" />
+    <Compile Include="NumberInWordsModel\RussianThousandsConverter.cs" />
     <Compile Include="UI\NumberInWordsApplication.cs" />
     <Compile Include="UI\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NumberInWords.NumberInWordsModel;
 
-namespace NumberInWordsTests
+/*namespace NumberInWordsTests
 {
     /// <summary>
     /// Summary description for RussianMillionsConverterTests
@@ -79,4 +79,4 @@ namespace NumberInWordsTests
             string output = convertNumber.ConvertNumber(input);
         }
     }
-}
+}*/

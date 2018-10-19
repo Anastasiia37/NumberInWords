@@ -1,75 +1,32 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace NumberInWords.NumberInWordsModel
 {
-    /// <summary>
-    /// Converts numbers from 0 to 999_999
-    /// </summary>
-    /// <seealso cref="NumberInWords.NumberInWordsModel.RussianHundredsConverter" />
-    public class RussianThousandsConverter : RussianHundredsConverter
+    public class RussianThousandsConverter : NumberToStringThousandsConverter
     {
-        public RussianThousandsConverter()
-        {
-            this.StartMethod = this.GetThousands;
-        }
+        protected override string zeroString => "ноль";
 
-        public override int MaxNumber => 999_999;
+        public override string[] strDigit { get => new string [10] { string.Empty, "один", "два", "три", "четыре", "пять", "шесть", "семь", "восемь", "девять" }; set => throw new NotImplementedException(); }
+        public override string[] strThousands { get => new string[10] { "тысяч", "одна тысяча", "две тысячи", "три тысячи", "четыре тысячи", "пять тысяч", "шесть тысяч", "семь тысяч", "восемь тысяч", "девять тысяч" }; set => throw new NotImplementedException(); }
+        public override string[] strTeens { get => new string[10] { string.Empty, "одиннадцать", "двенадцать", "тринадцать", "четырнадцать", "пятнадцать", "шестнадцать", "семнадцать", "восемнадцать", "девятнадцать" }; set => throw new NotImplementedException(); }
+        public override string[] strTens { get => new string[10] { string.Empty, "десять", "двадцать", "тридцать", "сорок", "пятьдесят", "шестьдесят", "семьдесят", "восемьдесят", "девяносто" }; set => throw new NotImplementedException(); }
+        public override string[] strHundreds { get => new string[10] { string.Empty, "сто", "двести", "триста", "четыреста", "пятьсот", "шестьсот", "семьсот", "восемьсот", "девятьсот" }; set => throw new NotImplementedException(); }
 
-        protected string GetThousands(int number)
-        {
-            StringBuilder str_thousands = new StringBuilder();
-            str_thousands.Append(string.Empty);
-            string str_hundreds = GetHundreds(number % 1000);
-            int thousands = number / 1000;
-            if (thousands > 0)
-            {
-                if (thousands % 100 >= 11 && thousands % 100 <= 19)
-                {
-                    str_thousands.Append(GetHundreds(thousands)).Append(" тысяч");
-                }
-                else
-                {
-                    switch (thousands % 10)
-                    {
-                        case 1:
-                            str_thousands.Append(this.GetHundreds(thousands));
-                            str_thousands.Remove(str_thousands.Length - 2, 2);
-                            str_thousands.Append("на тысяча");
-                            break;
-                        case 2:
-                            str_thousands.Append(this.GetHundreds(thousands));
-                            str_thousands.Remove(str_thousands.Length - 1, 1);
-                            str_thousands.Append("е тысячи");
-                            break;
+        
+        //public override
 
-                        case 3:
-                        case 4:
-                            str_thousands.Append(GetHundreds(thousands)).Append(" тысячи");
-                            break;
-                        case 0:
-                        case 5:
-                        case 6:
-                        case 7:
-                        case 8:
-                        case 9:
-                            str_thousands.Append(GetHundreds(thousands)).Append(" тысяч");
-                            break;
-                    }
-                }
-            }
+        //public override string[] strDigit  = { string.Empty, "один", "два", "три", "четыре", "пять", "шесть", "семь", "восемь", "девять" };
 
-            if (str_hundreds == string.Empty)
-            {
-                return str_thousands.ToString();
-            }
+        //protected new string[] strTeens = { string.Empty, "одиннадцать", "двенадцать", "тринадцать", "четырнадцать", "пятнадцать", "шестнадцать", "семнадцать", "восемнадцать", "девятнадцать" };
 
-            if (str_thousands.ToString() == string.Empty)
-            {
-                return str_hundreds;
-            }
+        //protected new string[] strTens = { string.Empty, "десять", "двадцать", "тридцать", "сорок", "пятьдесят", "шестьдесят", "семьдесят", "восемьдесят", "девяносто" };
 
-            return str_thousands + " " + str_hundreds;
-        }
+        //protected new string[] strHundreds = {string.Empty, "сто", "двести", "триста", "четыреста", "пятьсот", "шестьсот", "семьсот", "восемьсот", "девятьсот"};
+
+        //protected new string[] strThousands = {"тысяч", "\b\b\bна тысяча", "\b\bе тысячи", "тысячи", "тысячи", "тысяч", "тысяч", "тысяч", "тысяч", "тысяч"};
     }
 }

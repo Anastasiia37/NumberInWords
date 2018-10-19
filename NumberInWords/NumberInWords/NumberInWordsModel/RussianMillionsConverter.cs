@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace NumberInWords.NumberInWordsModel
+/*namespace NumberInWords.NumberInWordsModel
 {
     /// <summary>
     /// Converts numbers from 0 to 999_999_999
     /// </summary>
-    /// <seealso cref="NumberInWords.NumberInWordsModel.RussianThousandsConverter" />
-    public class RussianMillionsConverter : RussianThousandsConverter
+    /// <seealso cref="NumberInWords.NumberInWordsModel.NumberToStringThousandsConverter" />
+   public class RussianMillionsConverter : NumberToStringThousandsConverter
     {
         public RussianMillionsConverter()
         {
@@ -67,4 +67,4 @@ namespace NumberInWords.NumberInWordsModel
             return str_millions + " " + str_thousands;
         }
     }
-}
+}*/

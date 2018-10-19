@@ -21,7 +21,12 @@ namespace NumberInWords.NumberInWordsModel
             get;
             set;
         }
-        
+
+        protected abstract string zeroString
+        {
+            get;
+        }
+
         public string ConvertNumber(int number)
         {
             if (number < this.MinNumber)
@@ -33,8 +38,16 @@ namespace NumberInWords.NumberInWordsModel
             {
                 throw new ArgumentException($"Input parameter can not be greater than {MaxNumber}!");
             }
+            if (number == 0)
+            {
+                return this.zeroString;
+            }
+            else
+            {
+                Console.WriteLine("Here2"); //Here
 
-            return this.StartMethod(number);
+                return this.StartMethod(number);
+            }
         }
     }
 }

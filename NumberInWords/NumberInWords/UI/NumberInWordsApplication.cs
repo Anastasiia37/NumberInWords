@@ -10,20 +10,23 @@ namespace NumberInWords.UI
 
         public int Run(string[] args)
         {
-            try
-            {
-                this.myNumber = NumberValidator.Validate(args);
-                RussianMillionsConverter converter = new RussianMillionsConverter();
-                this.myNumberInWords = converter.ConvertNumber(this.myNumber);
-                Console.WriteLine($"Your number {this.myNumber} in words is: {this.myNumberInWords}");
-                return (int)ReturnCode.Success;
-            }
-            catch (ArgumentException exception)
-            {
-                Console.WriteLine(exception.Message);
-                this.Instructions();
-                return (int)ReturnCode.Error;
-            }
+            /*   try
+               {
+                   this.myNumber = NumberValidator.Validate(args);
+                   RussianMillionsConverter converter = new RussianMillionsConverter();
+                   this.myNumberInWords = converter.ConvertNumber(this.myNumber);
+                   Console.WriteLine($"Your number {this.myNumber} in words is: {this.myNumberInWords}");
+                   return (int)ReturnCode.Success;
+               }
+               catch (ArgumentException exception)
+               {
+                   Console.WriteLine(exception.Message);
+                   this.Instructions();
+                   return (int)ReturnCode.Error;
+               }*/
+
+            //DELETE
+            return (int)ReturnCode.Error;
         }
 
         private void Instructions()
