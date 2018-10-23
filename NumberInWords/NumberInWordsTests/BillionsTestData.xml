@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Numbers>
+  <Number input="2100230550"
+          expectedRU="два миллиарда сто миллионов двести тридцать тысяч пятьсот пятьдесят"/>
+  <Number input="17000000000" 
+          expectedRU="семнадцать миллиардов"/>
+</Numbers>

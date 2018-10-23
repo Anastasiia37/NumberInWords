@@ -1,22 +1,22 @@
-﻿// <copyright file="ReturnCode.cs" company="Peretiatko Anastasiia">
+﻿// <copyright file="Language.cs" company="Peretiatko Anastasiia">
 // Copyright (c) Peretiatko Anastasiia. All rights reserved.
 // </copyright>
 
 namespace NumberInWords.UI
 {
     /// <summary>
-    /// Return code for program
+    /// Supported languages
     /// </summary>
-    public enum ReturnCode
+    public enum Language
     {
         /// <summary>
-        /// The success completion of the program
+        /// The russian language
         /// </summary>
-        Success,
+        Ru = 0,
 
         /// <summary>
-        /// When error occurred
+        /// The english language
         /// </summary>
-        Error
+        Eng = 1
     }
 }

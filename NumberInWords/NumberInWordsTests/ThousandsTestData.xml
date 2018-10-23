@@ -1,19 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Numbers>
-  <Number input="1100" expected="одна тысяча сто"/>
-  <Number input="2105" expected="две тысячи сто пять"/>
-  <Number input="5150" expected="пять тысяч сто пятьдесят"/>
-  <Number input="30153" expected="тридцать тысяч сто пятьдесят три"/>
-  <Number input="41237" expected="сорок одна тысяча двести тридцать семь"/>
-  <Number input="52300" expected="пятьдесят две тысячи триста"/>
-  <Number input="106406" expected="сто шесть тысяч четыреста шесть"/>
-  <Number input="210560" expected="двести десять тысяч пятьсот шестьдесят"/>
-  <Number input="304999" expected="триста четыре тысячи девятьсот девяносто девять"/>
-  <Number input="500010" expected="пятьсот тысяч десять"/>
-  <Number input="611000" expected="шестьсот одиннадцать тысяч"/>
-  <Number input="812012" expected="восемьсот двенадцать тысяч двенадцать"/>
-  <Number input="313222" expected="триста тринадцать тысяч двести двадцать два"/>
-  <Number input="15200" expected="пятнадцать тысяч двести"/>
-  <Number input="720040" expected="семьсот двадцать тысяч сорок"/>
-  <Number input="127" expected="сто двадцать семь"/>
+  <Number input="1000" expectedRU="одна тысяча" 
+          expectedENG="one thousand"/>
+  <Number input="2000" expectedRU="две тысячи" 
+          expectedENG="two thousand"/>
+  <Number input="3000" expectedRU="три тысячи" 
+          expectedENG="three thousand"/>
+  <Number input="4000" expectedRU="четыре тысячи" 
+          expectedENG="four thousand"/>
+  <Number input="5000" expectedRU="пять тысяч" 
+          expectedENG="five thousand"/>
+  <Number input="6000" expectedRU="шесть тысяч" 
+          expectedENG="six thousand"/>
+  <Number input="7000" expectedRU="семь тысяч" 
+          expectedENG="seven thousand"/>
+  <Number input="8000" expectedRU="восемь тысяч" 
+          expectedENG="eight thousand"/>
+  <Number input="9000" expectedRU="девять тысяч" 
+          expectedENG="nine thousand"/>
+  <Number input="210000" expectedRU="двести десять тысяч" 
+          expectedENG="two hundred and ten thousand"/>
+  <Number input="30100" expectedRU="тридцать тысяч сто" 
+          expectedENG="thirty thousand one hundred"/>
+  <Number input="600000" expectedRU="шестьсот тысяч" 
+          expectedENG="six hundred thousand"/>
+  <Number input="50010" expectedRU="пятьдесят тысяч десять" 
+          expectedENG="fifty thousand ten"/>
+  <Number input="715346" expectedRU="семьсот пятнадцать тысяч триста сорок шесть" 
+          expectedENG="seven hundred and fifteen thousand three hundred and forty-six"/>
 </Numbers>

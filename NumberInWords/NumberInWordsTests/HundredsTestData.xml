@@ -1,14 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Numbers>
-  <Number input="100" expected="сто"/>
-  <Number input="105" expected="сто пять"/>
-  <Number input="150" expected="сто пятьдесят"/>
-  <Number input="153" expected="сто пятьдесят три"/>
-  <Number input="237" expected="двести тридцать семь"/>
-  <Number input="300" expected="триста"/>
-  <Number input="406" expected="четыреста шесть"/>
-  <Number input="560" expected="пятьсот шестьдесят"/>
-  <Number input="999" expected="девятьсот девяносто девять"/>
-  <Number input="10" expected="десять"/>
-  <Number input="30" expected="тридцать"/>
+  <Number input="100" expectedRU="сто" expectedENG="one hundred"/>
+  <Number input="200" expectedRU="двести" expectedENG="two hundred"/>
+  <Number input="300" expectedRU="триста" expectedENG="three hundred"/>
+  <Number input="400" expectedRU="четыреста" expectedENG="four hundred"/>
+  <Number input="500" expectedRU="пятьсот" expectedENG="five hundred"/>
+  <Number input="600" expectedRU="шестьсот" expectedENG="six hundred"/>
+  <Number input="700" expectedRU="семьсот" expectedENG="seven hundred"/>
+  <Number input="800" expectedRU="восемьсот" expectedENG="eight hundred"/>
+  <Number input="900" expectedRU="девятьсот" expectedENG="nine hundred"/>
+  <Number input="105" expectedRU="сто пять" expectedENG="one hundred and five"/>
+  <Number input="237" expectedRU="двести тридцать семь" expectedENG="two hundred and thirty-seven"/>
+  <Number input="560" expectedRU="пятьсот шестьдесят" expectedENG="five hundred and sixty"/>
 </Numbers>

@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Numbers>
-  <Number input="10" expected="десять"/>
-  <Number input="11" expected="одиннадцать"/>
-  <Number input="12" expected="двенадцать"/>
-  <Number input="19" expected="девятнадцать"/>
-  <Number input="20" expected="двадцать"/>
-  <Number input="40" expected="сорок"/>
-  <Number input="42" expected="сорок два"/>
-  <Number input="57" expected="пятьдесят семь"/>
-  <Number input="93" expected="девяносто три"/>
-  <Number input="6" expected="шесть"/>
+  <Number input="10" expectedRU="десять" expectedENG="ten"/>
+  <Number input="20" expectedRU="двадцать" expectedENG="twenty"/>
+  <Number input="30" expectedRU="тридцать" expectedENG="thirty"/>
+  <Number input="40" expectedRU="сорок" expectedENG="forty"/>
+  <Number input="50" expectedRU="пятьдесят" expectedENG="fifty"/>
+  <Number input="60" expectedRU="шестьдесят" expectedENG="sixty"/>
+  <Number input="70" expectedRU="семьдесят" expectedENG="seventy"/>
+  <Number input="80" expectedRU="восемьдесят" expectedENG="eighty"/>
+  <Number input="90" expectedRU="девяносто" expectedENG="ninety"/>
+  <Number input="42" expectedRU="сорок два" expectedENG="forty-two"/>
 </Numbers>

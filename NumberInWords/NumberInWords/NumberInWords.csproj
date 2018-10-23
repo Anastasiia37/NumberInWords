@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -43,20 +46,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ArgumentsCount.cs" />
+    <Compile Include="NumberInWordsModel\EnglishConverter.cs" />
     <Compile Include="NumberInWordsModel\INumberToStringConverter.cs" />
-    <Compile Include="NumberInWordsModel\NumberToStringHundredsConverter.cs" />
-    <Compile Include="NumberInWordsModel\RussianMillionsConverter.cs" />
-    <Compile Include="NumberInWordsModel\NumberToStringThousandsConverter.cs" />
     <Compile Include="NumberInWordsModel\NumberToStringConverter.cs" />
-    <Compile Include="NumberInWordsModel\RussianThousandsConverter.cs" />
+    <Compile Include="NumberInWordsModel\RussianConverter.cs" />
+    <Compile Include="UI\Language.cs" />
+    <Compile Include="UI\Logger.cs" />
     <Compile Include="UI\NumberInWordsApplication.cs" />
     <Compile Include="UI\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UI\ReturnCode.cs" />
-    <Compile Include="UI\NumberValidator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReadMe.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

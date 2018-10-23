@@ -1,19 +1,41 @@
-﻿using System;
+﻿// <copyright file="INumberToStringConverter.cs" company="Peretiatko Anastasiia">
+// Copyright (c) Peretiatko Anastasiia. All rights reserved.
+// </copyright>
 
 namespace NumberInWords.NumberInWordsModel
 {
+    /// <summary>
+    /// Abstraction for Number to String Converter
+    /// </summary>
     public interface INumberToStringConverter
     {
-        int MaxNumber
+        /// <summary>
+        /// Gets the maximum number for conversion
+        /// </summary>
+        /// <value>
+        /// The maximum number for conversion
+        /// </value>
+        ulong MaxNumber
         {
             get;
         }
 
-        int MinNumber
+        /// <summary>
+        /// Gets the minimum number for conversion
+        /// </summary>
+        /// <value>
+        /// The minimum number for conversion
+        /// </value>
+        ulong MinNumber
         {
             get;
         }
 
-        string ConvertNumber(int number);
+        /// <summary>
+        /// The main function of Converter that converts the number to its representation in words
+        /// </summary>
+        /// <param name="number">The number</param>
+        /// <returns>number`s representation in words</returns>
+        string ConvertNumber(ulong number);
     }
 }

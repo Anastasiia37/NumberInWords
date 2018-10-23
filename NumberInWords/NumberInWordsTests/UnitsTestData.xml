@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Numbers>
+  <Number input="1" expectedRU="один" expectedENG="one"/>
+  <Number input="2" expectedRU="два" expectedENG="two"/>
+  <Number input="3" expectedRU="три" expectedENG="three"/>
+  <Number input="4" expectedRU="четыре" expectedENG="four"/>
+  <Number input="5" expectedRU="пять" expectedENG="five"/>
+  <Number input="6" expectedRU="шесть" expectedENG="six"/>
+  <Number input="7" expectedRU="семь" expectedENG="seven"/>
+  <Number input="8" expectedRU="восемь" expectedENG="eight"/>
+  <Number input="9" expectedRU="девять" expectedENG="nine"/>
+</Numbers>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Numbers>
+  <Number input="11" expectedRU="одиннадцать" expectedENG="eleven"/>
+  <Number input="12" expectedRU="двенадцать" expectedENG="twelve"/>
+  <Number input="13" expectedRU="тринадцать" expectedENG="thirteen"/>
+  <Number input="14" expectedRU="четырнадцать" expectedENG="fourteen"/>
+  <Number input="15" expectedRU="пятнадцать" expectedENG="fifteen"/>
+  <Number input="16" expectedRU="шестнадцать" expectedENG="sixteen"/>
+  <Number input="17" expectedRU="семнадцать" expectedENG="seventeen"/>
+  <Number input="18" expectedRU="восемнадцать" expectedENG="eighteen"/>
+  <Number input="19" expectedRU="девятнадцать" expectedENG="nineteen"/>
+</Numbers>
