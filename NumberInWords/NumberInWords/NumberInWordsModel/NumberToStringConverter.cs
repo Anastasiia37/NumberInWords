@@ -11,10 +11,17 @@ namespace NumberInWords.NumberInWordsModel
     /// Abstract class for conversion number to its representation in words
     /// Implements all functionality of the Converter
     /// Works with non-negative numbers
+    /// For creating new converter it is needed to override all abstract members,
+    /// the length of arrays must be equal to 10
     /// </summary>
     /// <seealso cref="NumberInWords.NumberInWordsModel.INumberToStringConverter" />
     public abstract class NumberToStringConverter : INumberToStringConverter
     {
+        /// <summary>
+        /// The elements count in arrays with dictionary
+        /// </summary>
+        protected const int ELEMENTS_COUNT = 10;
+
         /// <summary>
         /// Initializes a new instance of the <see cref="NumberToStringConverter"/> class
         /// Initializes maximum number that can be converted
@@ -71,6 +78,7 @@ namespace NumberInWords.NumberInWordsModel
 
         /// <summary>
         /// Gets the representation of digits of a number in words
+        /// Its length must be equal to ELEMENTS_COUNT
         /// </summary>
         /// <value>
         /// Digits of number in words
@@ -82,6 +90,7 @@ namespace NumberInWords.NumberInWordsModel
 
         /// <summary>
         /// Gets the representation of teens of a number in words
+        /// Its length must be equal to ELEMENTS_COUNT
         /// </summary>
         /// <value>
         /// Teens of number in words
@@ -93,6 +102,7 @@ namespace NumberInWords.NumberInWordsModel
 
         /// <summary>
         /// Gets the representation of tens of a number in words
+        /// Its length must be equal to ELEMENTS_COUNT
         /// </summary>
         /// <value>
         /// Tens of number in words
@@ -104,6 +114,7 @@ namespace NumberInWords.NumberInWordsModel
 
         /// <summary>
         /// Gets the representation of hundreds of a number in words
+        /// Its length must be equal to ELEMENTS_COUNT
         /// </summary>
         /// <value>
         /// Hundreds of number in words
@@ -115,6 +126,7 @@ namespace NumberInWords.NumberInWordsModel
 
         /// <summary>
         /// Gets the representation of degrees of thousand in words
+        /// The second dimension must be equal to ELEMENTS_COUNT
         /// </summary>
         /// <value>
         /// Degrees of thousand in words
@@ -156,6 +168,7 @@ namespace NumberInWords.NumberInWordsModel
         /// <exception cref="ArgumentException">
         /// Exception is expected when the number for conversion is less than minimum number,
         /// or when the number for conversion is bigger than maximum number
+        /// </exception>
         public string ConvertNumber(ulong number)
         {
             if (number < this.MinNumber)

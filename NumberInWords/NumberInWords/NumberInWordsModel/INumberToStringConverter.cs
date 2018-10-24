@@ -35,7 +35,7 @@ namespace NumberInWords.NumberInWordsModel
         /// The main function of Converter that converts the number to its representation in words
         /// </summary>
         /// <param name="number">The number</param>
-        /// <returns>number`s representation in words</returns>
+        /// <returns>Number`s representation in words</returns>
         string ConvertNumber(ulong number);
     }
 }

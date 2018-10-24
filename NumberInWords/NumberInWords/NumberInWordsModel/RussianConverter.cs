@@ -26,7 +26,7 @@ namespace NumberInWords.NumberInWordsModel
         /// </value>
         protected override string[] DigitInWords
         {
-            get => new string[10] 
+            get => new string[ELEMENTS_COUNT] 
             {
                 string.Empty,
                 "один",
@@ -49,7 +49,7 @@ namespace NumberInWords.NumberInWordsModel
         /// </value>
         protected override string[] TeensInWords
         {
-            get => new string[10]
+            get => new string[ELEMENTS_COUNT]
             {
                 string.Empty,
                 "одиннадцать",
@@ -72,7 +72,7 @@ namespace NumberInWords.NumberInWordsModel
         /// </value>
         protected override string[] TensInWords
         {
-            get => new string[10]
+            get => new string[ELEMENTS_COUNT]
             {
                 string.Empty,
                 "десять",
@@ -95,7 +95,7 @@ namespace NumberInWords.NumberInWordsModel
         /// </value>
         protected override string[] HundredsInWords
         {
-            get => new string[10]
+            get => new string[ELEMENTS_COUNT]
             {
                 string.Empty,
                 "сто",
@@ -118,7 +118,7 @@ namespace NumberInWords.NumberInWordsModel
         /// </value>
         protected override string[,] DegreesOfThousandInWords
         {
-            get => new string[3, 10]
+            get => new string[3, ELEMENTS_COUNT]
             {                
                 {
                     "тысяч",
@@ -157,6 +157,6 @@ namespace NumberInWords.NumberInWordsModel
                     "девять миллиардов"
                 }
             };
-        }       
+        }
     }
 }

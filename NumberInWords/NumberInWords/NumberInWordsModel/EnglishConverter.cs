@@ -42,7 +42,7 @@ namespace NumberInWords.NumberInWordsModel
         /// </value>
         protected override string[] DigitInWords
         {
-            get => new string[10]
+            get => new string[ELEMENTS_COUNT]
             {
                 string.Empty,
                 "one",
@@ -65,7 +65,7 @@ namespace NumberInWords.NumberInWordsModel
         /// </value>
         protected override string[] TeensInWords
         {
-            get => new string[10]
+            get => new string[ELEMENTS_COUNT]
             {
                 string.Empty,
                 "eleven",
@@ -88,7 +88,7 @@ namespace NumberInWords.NumberInWordsModel
         /// </value>
         protected override string[] TensInWords
         {
-            get => new string[10]
+            get => new string[ELEMENTS_COUNT]
             {
                 string.Empty,
                 "ten",
@@ -111,7 +111,7 @@ namespace NumberInWords.NumberInWordsModel
         /// </value>
         protected override string[] HundredsInWords
         {
-            get => new string[10]
+            get => new string[ELEMENTS_COUNT]
             {
                 string.Empty,
                 "one hundred",
@@ -134,7 +134,7 @@ namespace NumberInWords.NumberInWordsModel
         /// </value>
         protected override string[,] DegreesOfThousandInWords
         {
-            get => new string[1, 10]
+            get => new string[1, ELEMENTS_COUNT]
             {
                 {
                     "thousand",
